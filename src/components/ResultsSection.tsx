@@ -14,12 +14,12 @@ class ResultsSectionRaw extends React.Component<IResultsSectionProps> {
         const { result } = this.props;
 
         return (<div>
-            <h3><small>People count: {result.peopleCount}</small></h3>
-            <h3><small>Total products value: {result.totalValue.toFixed(2)} $</small></h3>
-            <h3><small>Cost per person: {result.costPerPerson.toFixed(2)} $/person</small></h3>
+            <h3><small>¿Cuantos somos? {result.peopleCount}</small></h3>
+            <h3><small>Total de la vaquita: {result.totalValue.toFixed(2)} $</small></h3>
+            <h3><small>¿Cuanto paga cada uno?: {result.costPerPerson.toFixed(2)} $/persona</small></h3>
 
             <table className="table table-striped">
-                <caption>Transaction list</caption>
+                <caption>Lista de transsaciones</caption>
                 <thead>
                 <tr>
                     <th>Who gives</th>
