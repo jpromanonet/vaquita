@@ -18,7 +18,6 @@ class App extends React.Component<{store: any | undefined}> {
           return (
               <div className="container-fluid">
                   <div className="row header App-header">
-                      <img src={Logo} className="App-logo"/>
                       <h1>Vaquita</h1>
                   </div>
                   <div className="row content">
