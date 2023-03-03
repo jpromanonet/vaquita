@@ -27,8 +27,8 @@ export default class PersonForm extends React.Component<IAddPersonFormProps, IAd
 
 
     public render() {
-        const title = this.props.isCreateForm ? 'ADD PERSON' : 'EDIT PERSON';
-        const buttonText = this.props.isCreateForm ? 'Add': 'Save';
+        const title = this.props.isCreateForm ? 'Agregar Persona' : 'Editar persona';
+        const buttonText = this.props.isCreateForm ? 'Agregar': 'Guardar';
         return (
             <section>
                 <h4>
@@ -38,7 +38,7 @@ export default class PersonForm extends React.Component<IAddPersonFormProps, IAd
                     <div className="form-group">
                         <input type="text"
                                className="form-control"
-                               placeholder="Name.."
+                               placeholder="Nombre..."
                                value={this.state.value}
                                onChange={this.handleInputChange.bind(this)}
                         />
