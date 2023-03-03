@@ -38,7 +38,7 @@ export default class PersonForm extends React.Component<IAddPersonFormProps, IAd
                     <div className="form-group">
                         <input type="text"
                                className="form-control"
-                               placeholder="Name.."
+                               placeholder="Nombre..."
                                value={this.state.value}
                                onChange={this.handleInputChange.bind(this)}
                         />
