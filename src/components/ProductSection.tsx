@@ -30,7 +30,7 @@ class ProductSectionRaw extends React.Component<IProductSectionProps, IProductSe
         };
     }
     public render() {
-        const toolbox = this.props.activeId !== null ? this.renderToolbox() : <small>No product selected</small>;
+        const toolbox = this.props.activeId !== null ? this.renderToolbox() : <small>Sin productos seleccionados</small>;
         return (<div>
                 <ProductList products={this.props.products}
                              activeId={this.props.activeId}
@@ -62,9 +62,9 @@ class ProductSectionRaw extends React.Component<IProductSectionProps, IProductSe
 
     private renderToolbox() {
         return <section className="form-group" id="edit-buttons">
-            <small>Selected:</small>
-            <Button text="Edit" onClick={()=>{this.setState({isEditing: true})}} icon="glyphicon-pencil"/>
-            <Button text="Delete" onClick={this.handleDelete.bind(this)} icon="glyphicon-remove"/>
+            <small>Seleccionado:</small>
+            <Button text="Editar" onClick={()=>{this.setState({isEditing: true})}} icon="glyphicon-pencil"/>
+            <Button text="Borrar" onClick={this.handleDelete.bind(this)} icon="glyphicon-remove"/>
         </section>;
     }
 
