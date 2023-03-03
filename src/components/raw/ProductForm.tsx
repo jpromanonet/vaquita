@@ -33,7 +33,7 @@ export default class ProductForm extends React.Component<IProductFormProps, IPro
     }
 
     public render() {
-        const title = this.props.isCreateForm ? 'ADD PRODUCT' : 'EDIT PRODUCT';
+        const title = this.props.isCreateForm ? 'Agregar Producto' : 'Editar Producto';
         return (
             <section>
                 <h4>
@@ -41,17 +41,17 @@ export default class ProductForm extends React.Component<IProductFormProps, IPro
                 </h4>
                 {this.props.children}
                 <form className="form-inline">
-                    {this.props.isCreateForm ? <small>Bought by: {this.props.ownerName}</small> : ''}
+                    {this.props.isCreateForm ? <small>Comprado por: {this.props.ownerName}</small> : ''}
                     <div className="form-group">
-                        <input type="text" name="name" className="form-control" placeholder="Name.."
+                        <input type="text" name="name" className="form-control" placeholder="Nombre..."
                             value={this.state.name} onChange={this.handleInputChange}/>
                         <div className="input-group">
-                            <input type="text" name="price" className="form-control" placeholder="Price.."
+                            <input type="text" name="price" className="form-control" placeholder="Precio..."
                                 value={this.state.price.toString()} onChange={this.handleInputChange}/>
                             <div className="input-group-addon">$</div>
                         </div>
 
-                        <Button text={this.props.isCreateForm ? 'Add' : 'Save'} onClick={this.handleButtonClick} icon="glyphicon-plus"/>
+                        <Button text={this.props.isCreateForm ? 'Agregar' : 'Guardar'} onClick={this.handleButtonClick} icon="glyphicon-plus"/>
 
                     </div>
                 </form>

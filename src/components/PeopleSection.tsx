@@ -39,7 +39,7 @@ class PeopleSectionRaw extends React.Component<IPeopleSectionProps, IPeopleSecti
 
 
     public render() {
-        const toolbox = this.props.activeId !== null ? this.renderToolbox() : <small>Sin persona seleccionade</small>;
+        const toolbox = this.props.activeId !== null ? this.renderToolbox() : <small>No person selected</small>;
 
         const selectedPerson = this.props.people.find(p => p.id === this.props.activeId);
         const initialName = selectedPerson? selectedPerson.name : 'N/A';
@@ -61,7 +61,7 @@ class PeopleSectionRaw extends React.Component<IPeopleSectionProps, IPeopleSecti
 
     private renderToolbox() {
         return <section className="form-group" id="edit-buttons">
-            <small>Seleccionade:</small>
+            <small>Selected:</small>
             <Button text="Edit" onClick={()=>{this.setState({isEditing: true})}} icon="glyphicon-pencil"/>
             <Button text="Delete" onClick={this.handleDelete.bind(this)} icon="glyphicon-remove"/>
             <Button text="Clear products" onClick={this.handleClearProducts.bind(this)}/>

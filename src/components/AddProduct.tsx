@@ -23,7 +23,7 @@ class AddProductRaw extends React.Component<IAddProductProps> {
     }
 
     private renderInfoMessage() {
-        return <p>¡No tenes productos asociados a une persona!, ¡por favor, asocia un producto primero!</p>;
+        return <p>No product owner is selected! Please select a person first to add product!</p>;
     }
 
     private handleSubmit(name: string, price: number) {
