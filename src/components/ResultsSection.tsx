@@ -19,12 +19,12 @@ class ResultsSectionRaw extends React.Component<IResultsSectionProps> {
             <h3><small>¿Cuanto paga cada uno?: {result.costPerPerson.toFixed(2)} $/persona</small></h3>
 
             <table className="table table-striped">
-                <caption>Lista de transsaciones</caption>
+                <caption>Lista de transaciones</caption>
                 <thead>
                 <tr>
-                    <th>Who gives</th>
-                    <th>To whom</th>
-                    <th>How much</th>
+                    <th>Quien paga</th>
+                    <th>A quien le paga</th>
+                    <th>¿Cuanto paga?</th>
                 </tr>
                 </thead>
                 <tbody>
