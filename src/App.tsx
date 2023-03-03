@@ -1,7 +1,6 @@
 import * as React from 'react';
 import './App.css';
 import './main.css';
-import Logo from './logo.svg';
 import ProductSection from "./components/ProductSection";
 import PeopleSection from "./components/PeopleSection";
 import ResultsSection from "./components/ResultsSection";
