@@ -25,21 +25,8 @@ export interface IAppState {
 
 const initialAppState: IAppState = {
     people: [
-        new Person(0,"Ann"),
-        new Person(1,"Bob", [
-            new Product(100,"Bread", 5),
-            new Product(101,"Meat", 10)
-        ]),
-        new Person(2,"Carla", [
-            new Product(102,"Cheese", 10.55)
-        ]),
-        new Person(3,"Dan"),
-        new Person(4,"Eddy", [
-            new Product(103,"Plates", 19.99)
-        ]),
-        new Person(5, "Fred", [
-            new Product(104, "Knife", 2.49)
-        ])
+        new Person(0,"Edita este nombre"),
+        
     ],
     selectedPersonId: null,
     selectedProductId: null

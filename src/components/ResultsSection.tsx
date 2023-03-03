@@ -16,7 +16,7 @@ class ResultsSectionRaw extends React.Component<IResultsSectionProps> {
         return (<div>
             <h3><small>Cantidad de productos: {result.peopleCount}</small></h3>
             <h3><small>Valor total de productos: {result.totalValue.toFixed(2)} $</small></h3>
-            <h3><small>Costo por persona: {result.costPerPerson.toFixed(2)} $/person</small></h3>
+            <h3><small>Costo por persona: {result.costPerPerson.toFixed(2)} $/persona</small></h3>
 
             <table className="table table-striped">
                 <caption>Lista de transacciones</caption>
