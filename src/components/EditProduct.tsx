@@ -29,9 +29,9 @@ class EditProductRaw extends React.Component<IEditProductProps, IEditProductStat
     }
 
     public render() {
-        const ownerInfo = <p>New product owner will be: <b>{this.props.selectedPersonName}</b></p>;
+        const ownerInfo = <p>Nuevo producto asociado a: <b>{this.props.selectedPersonName}</b></p>;
         const displayOwnerInfo: boolean = this.state.changeOwnerSelected;
-        const noOwnerMessage = <p>Please select new product owner from the list!</p>;
+        const noOwnerMessage = <p>Por favor asocia un producto a una persona</p>;
 
         const ownerMessage = this.props.isPersonSelected ? ownerInfo : noOwnerMessage;
 
