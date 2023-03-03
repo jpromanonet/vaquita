@@ -39,7 +39,7 @@ class PeopleSectionRaw extends React.Component<IPeopleSectionProps, IPeopleSecti
 
 
     public render() {
-        const toolbox = this.props.activeId !== null ? this.renderToolbox() : <small>No person selected</small>;
+        const toolbox = this.props.activeId !== null ? this.renderToolbox() : <small>Sin persona seleccionada</small>;
 
         const selectedPerson = this.props.people.find(p => p.id === this.props.activeId);
         const initialName = selectedPerson? selectedPerson.name : 'N/A';
