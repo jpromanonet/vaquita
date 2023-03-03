@@ -17,7 +17,7 @@ class AddPersonRaw extends React.Component<IAddPersonProps> {
     }
 
     private handleSubmit(value: string) {
-        console.log('AddPerson handle submit');
+        //console.log('AddPerson handle submit');
         this.props.dispatchAddPerson(value);
     }
 }
